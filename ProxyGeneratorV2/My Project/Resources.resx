@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,61 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Judge" xml:space="preserve">
+    <value>http://azenv.net</value>
+  </data>
+  <data name="PGV2_1" xml:space="preserve">
+    <value>Nothing to save!</value>
+  </data>
+  <data name="PGV2_TxtFile" xml:space="preserve">
+    <value>txt files (*.txt)|*.txt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="psrc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psrc.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WebSrc" xml:space="preserve">
+    <value>https://pastebin.com/raw/KhiFJE4m</value>
+  </data>
+  <data name="Matches" xml:space="preserve">
+    <value>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+</value>
+  </data>
+  <data name="PGV2_2" xml:space="preserve">
+    <value>Please load proxies to check first!</value>
+  </data>
+  <data name="PGV2_3" xml:space="preserve">
+    <value>Please either use inbuilt sources or provide your own.</value>
+  </data>
+  <data name="PGV2_4" xml:space="preserve">
+    <value>Finished! Saving output...</value>
+  </data>
+  <data name="PGV2_5" xml:space="preserve">
+    <value>Program terminated!</value>
+  </data>
+  <data name="PGV2_6" xml:space="preserve">
+    <value>Nothing to copy!</value>
+  </data>
+  <data name="PGV2_7" xml:space="preserve">
+    <value>Copied!</value>
+  </data>
+  <data name="PGV2_pLoad" xml:space="preserve">
+    <value>proxies loaded!</value>
+  </data>
+  <data name="PGV2_sLoad" xml:space="preserve">
+    <value>sources loaded!</value>
+  </data>
+  <data name="SplitString" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="TestString" xml:space="preserve">
+    <value>HTTP_HOST = azenv.net</value>
+  </data>
+  <data name="UserAgent" xml:space="preserve">
+    <value>Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.2 Safari/537.36</value>
+  </data>
 </root>
